@@ -34,14 +34,14 @@ class Provider extends AbstractProvider
 
     /**
      * The scopes being requested.
-     * Others include: '/activities/update','/person/update'.
+     * Others include: '/read-limited', '/activities/update','/person/update'.
      *
      * You can customise the scopes when invoking the ORCID Socialite provider
      * if this needs to change
      *
      * @var array
      */
-    protected $scopes = ['/authenticate', '/read-limited'];
+    protected $scopes = ['/authenticate'];
 
     /**
      * The separating character for the requested scopes.
